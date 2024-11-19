@@ -3541,6 +3541,16 @@ function tabs() {
     });
   });
 }
+function b24() {
+  const bitrixСallBtns = document.querySelectorAll(".call_b24"), b242 = document.querySelector('[data-b24-crm-button-widget="crmform"]');
+  if (b242) {
+    bitrixСallBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        b242.click();
+      });
+    });
+  }
+}
 document.addEventListener("DOMContentLoaded", function() {
   headerNav();
   burgerMenu();
@@ -3551,4 +3561,5 @@ document.addEventListener("DOMContentLoaded", function() {
   customSelect();
   tariffs();
   tabs();
+  b24();
 });
