@@ -3260,7 +3260,7 @@ function splideSlider() {
     });
     splide.mount();
   });
-  sliders = document.querySelectorAll(".tariffs:not(.tariffs--v2).splide");
+  sliders = document.querySelectorAll(".tariffs:not(.tariffs--v2, .tariffs--v3).splide");
   sliders.forEach((slider) => {
     const splide = new Splide(slider, {
       perPage: 3,
@@ -3271,6 +3271,9 @@ function splideSlider() {
       }
     });
     splide.on("mounted", () => destroyIfNotOverflowing(splide, slider));
+    splide.on("mounted move", () => {
+      updateSlideNumber(splide);
+    });
     splide.mount();
   });
   sliders = document.querySelectorAll(".tariffs--v2.splide");
