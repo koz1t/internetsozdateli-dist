@@ -140,6 +140,26 @@
       </header>
       <!-- /header -->
 
+<style>
+  .header__container {
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header__inner,
+  .header__burger-btn {
+    display: none;
+  }
+  .header__logo {
+    max-width: 15rem;
+    max-height: 2rem;
+  }
+  .logo,
+  .footer__nav-item {
+    pointer-events: none;
+  }
+</style>
+
 <main class="main">
 
   <section class="hero-section section">
@@ -150,57 +170,488 @@
     </div>
     <div class="hero-section__container section__container container">
       <div class="hero-section__content">
-        <h1 class="hero-section__title section__title">Seo-продвижение сайта</h1>
+        <h1 class="hero-section__title section__title">Интеграция<br> Битрикс24</h1>
         <div class="hero-section__text section__text editor">
-          <p>Увеличение числа заявок и звонков, расширение охвата целевой аудитории и рост популярности бренда в поисковых системах</p>
+          <p>Упростите Ваши бизнес процессы с внедрением Битрикс24</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- /hero -->
 
   <section class="section">
     <div class="section__container container">
-      <div class="section__content-container">
-        <h2 class="section__title">Услуги<br> по seo-продвижению</h2>
+      <div class="section__content-container section__content-container--long">
+        <h2 class="section__title">Сколько это стоит?</h2>
         <div class="section__text editor">
-          <p>Разработка сайта с учётом SEO – это эффективный путь к масштабированию и подстройка под современные тенденции.</p>
+          <p>Битрикс24 — это комплексный инструмент для управления бизнесом, он включает в себя инструменты для управления проектами, задачами, документооборотом, CRM, корпоративной социальной сетью, сайтами и магазинами, а также средства коммуникации внутри компании и с клиентами.<br> Выбор способа интеграции Битрикс 24 полностью зависит от размера и отрасли вашей организации, а также от определенных целей и задач, которые нужно выполнить. При необходимости наши специалисты проанализируют и предложат наиболее подходящее решение для вашего бизнеса.</p>
         </div>
       </div>
-      <div class="cards cards--3col">
-        <div class="cards__items">
-          <div class="cards__item cards__item--marker">
-            <div class="cards__item-inner">
-              <strong class="cards__item-title">SEO-продвижение</strong>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <p>Продвижение в поисковых системах (SEO). Комплекс мероприятий по выведению сайта на высокие позиции в выдаче поисковых систем.</p>
+      <div class="tabs">
+        <div class="tabs__btns">
+          <button class="tabs__btn">Облако</button>
+          <button class="tabs__btn">Коробка</button>
+        </div>
+        <div class="tabs__contents">
+          <div class="tabs__content tariffs tariffs--v2 splide">
+            <div class="tariffs__prolog">
+              <p class="tariffs__prolog-text">Цены указаны за всю компанию,<br> а не за отдельных пользователей</p>
+              <div class="tariffs__prolog-tabs tabs">
+                <div class="tabs__btns">
+                  <button class="tabs__btn" data-discount="false">на месяц</button>
+                  <button class="tabs__btn tabs__btn--active" data-discount="true">на год</button>
+                </div>
+                <span class="callout">Выгоднее на 20%</span>
+              </div>
+            </div>
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+                <small class="splide__arrow-intro">тариф</small>
+                <strong class="splide__arrow-title">Бесплатный</strong>
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                <small class="splide__arrow-intro">тариф</small>
+                <strong class="splide__arrow-title">Энтерпрайз</strong>
+              </button>
+            </div>
+            <div class="splide__track">
+              <div class="tariffs__items splide__list">
+                <div class="tariffs__item splide__slide">
+                  <div class="tariffs__item-header tariffs__item-header--center">
+                    <strong class="tariffs__item-title">Бесплатный</strong>
+                    <small class="tariffs__item-intro">Начните работать онлайн и продавать больше с CRM</small>
+                  </div>
+                  <div class="tariffs__item-info">
+                    <span class="tariffs__item-big">неограниченно пользователей</span>
+                    <a class="tariffs__item-link" href="#">узнать больше</a>
+                    <div class="tariffs__item-price">
+                      <span class="tariffs__item-price-current">Бесплатно</span>
+                      <span class="tariffs__item-price-info">за всех пользователей</span>
+                    </div>
+                    <button class="tariffs__item-btn btn btn--stretch">Создать</button>
+                    <span class="tariffs__item-memory tariffs__item-big">5 ГБ</span>
+                  </div>
+                  <div class="tariffs__item-content">
+                    <ul class="tariffs__item-list">
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Совместная работа</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Календарь</li>
+                          <li class="tariffs__item-sublist-item">Соцсеть компании</li>
+                          <li class="tariffs__item-sublist-item">Новости</li>
+                          <li class="tariffs__item-sublist-item">База знаний</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Мессенджер</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Чат</li>
+                          <li class="tariffs__item-sublist-item">Каналы</li>
+                          <li class="tariffs__item-sublist-item">Битрикс24 Синк</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Задачи и проекты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">CRM</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">CoPilot</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Онлайн-подпись</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Диск</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Контакт-центр</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Сайты</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tariffs__item splide__slide">
+                  <div class="tariffs__item-header tariffs__item-header--center">
+                    <strong class="tariffs__item-title">Базовый</strong>
+                    <small class="tariffs__item-intro">CRM для небольших отделов продаж</small>
+                  </div>
+                  <div class="tariffs__item-info">
+                    <span class="tariffs__item-big">5<br> пользователей</span>
+                    <div class="tariffs__item-price">
+                      <span class="tariffs__item-price-old">69 BYN/мес.</span>
+                      <span class="tariffs__item-price-current">55 BYN/мес.</span>
+                      <span class="tariffs__item-price-info">за всех пользователей</span>
+                    </div>
+                    <button class="tariffs__item-btn btn btn--stretch">Купить</button>
+                    <span class="tariffs__item-memory tariffs__item-big">24 ГБ</span>
+                  </div>
+                  <div class="tariffs__item-content">
+                    <ul class="tariffs__item-list">
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Совместная работа</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Календарь</li>
+                          <li class="tariffs__item-sublist-item">Соцсеть компании</li>
+                          <li class="tariffs__item-sublist-item">Новости</li>
+                          <li class="tariffs__item-sublist-item">База знаний</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Мессенджер</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Чат</li>
+                          <li class="tariffs__item-sublist-item">Каналы</li>
+                          <li class="tariffs__item-sublist-item">Битрикс24 Синк</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Задачи и проекты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">CRM</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">CoPilot</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Онлайн-подпись</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="1">Диск</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Контакт-центр</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Сайты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Интернет-магазин</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tariffs__item splide__slide">
+                  <div class="tariffs__item-header tariffs__item-header--center">
+                    <strong class="tariffs__item-title">Стандартный</strong>
+                    <small class="tariffs__item-intro">Для совместной работы всей компании или рабочих групп</small>
+                  </div>
+                  <div class="tariffs__item-info">
+                    <span class="tariffs__item-big">50<br> пользователей</span>
+                    <div class="tariffs__item-price">
+                      <span class="tariffs__item-price-old">179 BYN/мес.</span>
+                      <span class="tariffs__item-price-current">143 BYN/мес.</span>
+                      <span class="tariffs__item-price-info">за всех пользователей</span>
+                    </div>
+                    <button class="tariffs__item-btn btn btn--stretch">Купить</button>
+                    <span class="tariffs__item-memory tariffs__item-big">100 ГБ</span>
+                  </div>
+                  <div class="tariffs__item-content">
+                    <ul class="tariffs__item-list">
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Совместная работа</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Календарь</li>
+                          <li class="tariffs__item-sublist-item">Соцсеть компании</li>
+                          <li class="tariffs__item-sublist-item">Новости</li>
+                          <li class="tariffs__item-sublist-item">База знаний</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Мессенджер</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Чат</li>
+                          <li class="tariffs__item-sublist-item">Каналы</li>
+                          <li class="tariffs__item-sublist-item">Битрикс24 Синк</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Задачи и проекты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">CRM</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">CoPilot</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Онлайн-подпись</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Диск</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Контакт-центр</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Сайты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Интернет-магазин</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Маркетинг</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Документы Онлайн</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tariffs__item splide__slide">
+                  <div class="tariffs__item-header tariffs__item-header--center">
+                    <strong class="tariffs__item-title">Профессиональный</strong>
+                    <small class="tariffs__item-intro">Для максимальной автоматизации всех процессов в компании</small>
+                  </div>
+                  <div class="tariffs__item-info">
+                    <span class="tariffs__item-big">100<br> пользователей</span>
+                    <div class="tariffs__item-price">
+                      <span class="tariffs__item-price-old">359 BYN/мес.</span>
+                      <span class="tariffs__item-price-current">287 BYN/мес.</span>
+                      <span class="tariffs__item-price-info">за всех пользователей</span>
+                    </div>
+                    <button class="tariffs__item-btn btn btn--stretch">Купить</button>
+                    <span class="tariffs__item-memory tariffs__item-big">1024 ГБ</span>
+                  </div>
+                  <div class="tariffs__item-content">
+                    <ul class="tariffs__item-list">
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Совместная работа</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Календарь</li>
+                          <li class="tariffs__item-sublist-item">Соцсеть компании</li>
+                          <li class="tariffs__item-sublist-item">Новости</li>
+                          <li class="tariffs__item-sublist-item">База знаний</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Мессенджер</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Чат</li>
+                          <li class="tariffs__item-sublist-item">Каналы</li>
+                          <li class="tariffs__item-sublist-item">Битрикс24 Синк</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Задачи и проекты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">CRM</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">CoPilot</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Онлайн-подпись</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Диск</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Контакт-центр</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Сайты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Интернет-магазин</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Маркетинг</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Документы Онлайн</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="2">Сквозная аналитика</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Автоматизация</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">HR: Компания</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tariffs__item tariffs__item--variable splide__slide">
+                  <div class="tariffs__item-header tariffs__item-header--center">
+                    <strong class="tariffs__item-title">Энтерпрайз</strong>
+                    <small class="tariffs__item-intro">Для максимальной автоматизации всех процессов в компании</small>
+                  </div>
+                  <div class="tariffs__item-info">
+                    <div class="tariffs__item-custom-select custom-select custom-select--stretch">
+                      <div class="custom-select__current tariffs__item-big">100<br> пользователей</div>
+                      <ul class="custom-select__options">
+                        <li class="custom-select__option" data-old-price="959 BYN/мес." data-price="767 BYN/мес." data-memory="3 ТБ">250<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="1 659 BYN/мес." data-price="1 327 BYN/мес." data-memory="5 ТБ">500<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="2 759 BYN/мес." data-price="2 207 BYN/мес." data-memory="10 ТБ">1 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="5 500 BYN/мес." data-price="4 400 BYN/мес." data-memory="20 ТБ">2 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="8 200 BYN/мес." data-price="6 560 BYN/мес." data-memory="30 ТБ">3 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="11 000 BYN/мес." data-price="8 800 BYN/мес." data-memory="40 ТБ">4 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="13 800 BYN/мес." data-price="11 040 BYN/мес." data-memory="50 ТБ">5 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="16 500 BYN/мес." data-price="13 200 BYN/мес." data-memory="60 ТБ">6 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="19 300 BYN/мес." data-price="15 440 BYN/мес." data-memory="70 ТБ">7 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="22 000 BYN/мес." data-price="17 600 BYN/мес." data-memory="80 ТБ">8 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="24 800 BYN/мес." data-price="19 840 BYN/мес." data-memory="90 ТБ">9 000<br> пользователей</li>
+                        <li class="custom-select__option" data-old-price="27 500 BYN/мес." data-price="22 000 BYN/мес." data-memory="100 ТБ">10 000<br> пользователей</li>
+                      </ul>
+                    </div>
+                    <div class="tariffs__item-price">
+                      <span class="tariffs__item-price-old">959 BYN/мес.</span>
+                      <span class="tariffs__item-price-current">767 BYN/мес.</span>
+                      <span class="tariffs__item-price-info">за всех пользователей</span>
+                    </div>
+                    <button class="tariffs__item-btn btn btn--stretch">Купить</button>
+                    <span class="tariffs__item-memory tariffs__item-big">3 ТБ</span>
+                  </div>
+                  <div class="tariffs__item-content">
+                    <ul class="tariffs__item-list">
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Совместная работа</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Календарь</li>
+                          <li class="tariffs__item-sublist-item">Соцсеть компании</li>
+                          <li class="tariffs__item-sublist-item">Новости</li>
+                          <li class="tariffs__item-sublist-item">База знаний</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item tariffs__item-list-item--parent">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Мессенджер</span>
+                        <ul class="tariffs__item-sublist">
+                          <li class="tariffs__item-sublist-item">Чат</li>
+                          <li class="tariffs__item-sublist-item">Каналы</li>
+                          <li class="tariffs__item-sublist-item">Битрикс24 Синк</li>
+                        </ul>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Задачи и проекты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">CRM</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">CoPilot</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Онлайн-подпись</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Диск</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Контакт-центр</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Сайты</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Интернет-магазин</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Маркетинг</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Документы Онлайн</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Сквозная аналитика</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Автоматизация</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">HR: Компания</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">
+                          <span data-label="new">Филиалы</span>
+                        </span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Энтерпрайз-кластер</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Энтерпрайз-пакет</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Поддержка</span>
+                      </li>
+                      <li class="tariffs__item-list-item">
+                        <span class="tariffs__item-list-item-title" data-progress="3">Администрирование</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <span class="cards__item-watermark watermark">SEO</span>
           </div>
-          <div class="cards__item cards__item--marker">
-            <div class="cards__item-inner">
-              <strong class="cards__item-title">Локальное и мультирегиональное SEO</strong>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <p>Продвижение сайта в результатах органической выдачи поисковых систем одного или нескольких регионов одной страны.</p>
+          <div class="tabs__content tariffs tariffs--v3">
+            <div class="tariffs__items">
+              <div class="tariffs__item">
+                <div class="tariffs__item-header tariffs__item-header--center">
+                  <strong class="tariffs__item-title">Интернет-магазин +<br> CRM</strong>
+                </div>
+                <div class="tariffs__item-info">
+                  <span class="tariffs__item-big">12<br> <small>пользователей</small></span>
+                  <button class="tariffs__item-btn btn btn--fill">Получить консультацию</button>
+                  <span class="tariffs__item-additional">Лицензия 12 мес</span>
+                </div>
+                <div class="tariffs__item-content tariffs__item-content--center">
+                  <ul class="tariffs__item-list">
+                    <li class="tariffs__item-list-item">Экстранет</li>
+                    <li class="tariffs__item-list-item">eCommerce-платформа</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tariffs__item">
+                <div class="tariffs__item-header tariffs__item-header--center">
+                  <strong class="tariffs__item-title">Корпоративный<br> портал</strong>
+                </div>
+                <div class="tariffs__item-info">
+                  <div class="tariffs__item-big">
+                    <ul class="separators-list">
+                      <li class="separators-list__item">50</li>
+                      <li class="separators-list__item">100</li>
+                      <li class="separators-list__item">250</li>
+                      <li class="separators-list__item">500</li>
+                    </ul>
+                    <small>пользователей</small></div>
+                  <button class="tariffs__item-btn btn btn--fill">Получить консультацию</button>
+                  <span class="tariffs__item-additional">Лицензия 12 мес</span>
+                </div>
+                <div class="tariffs__item-content tariffs__item-content--center">
+                  <ul class="tariffs__item-list">
+                    <li class="tariffs__item-list-item">Экстранет</li>
+                    <li class="tariffs__item-list-item">eCommerce-платформа</li>
+                    <li class="tariffs__item-list-item">Документы Онлайн</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tariffs__item">
+                <div class="tariffs__item-header tariffs__item-header--center">
+                  <strong class="tariffs__item-title">Энтерпрайз</strong>
+                </div>
+                <div class="tariffs__item-info">
+                  <span class="tariffs__item-big">1000+<br> <small>пользователей</small></span>
+                  <button class="tariffs__item-btn btn btn--fill">Получить консультацию</button>
+                  <span class="tariffs__item-additional">Лицензия 12 мес</span>
+                </div>
+                <div class="tariffs__item-content tariffs__item-content--center">
+                  <ul class="tariffs__item-list">
+                    <li class="tariffs__item-list-item">Экстранет</li>
+                    <li class="tariffs__item-list-item">eCommerce-платформа</li>
+                    <li class="tariffs__item-list-item">Документы Онлайн</li>
+                    <li class="tariffs__item-list-item">Многодепартаментность</li>
+                    <li class="tariffs__item-list-item">Веб-кластер</li>
+                    <li class="tariffs__item-list-item">VIP поддержка 24/7</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <span class="cards__item-watermark watermark">SEO</span>
-          </div>
-          <div class="cards__item cards__item--marker">
-            <div class="cards__item-inner">
-              <strong class="cards__item-title">Международное SEO</strong>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <p>Более сложный комплекс мероприятий направленный на ранжирование сайта (сайтов) в результатах выдачи поисковых систем на разных языках.</p>
-                </div>
-              </div>
-            </div>
-            <span class="cards__item-watermark watermark">SEO</span>
           </div>
         </div>
       </div>
@@ -210,186 +661,6 @@
       <div class="watermark watermark--right">
         <span>Desktop</span><br>
         <span>WEB</span> <span>Mobile</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section__container container">
-      <div class="section__content-container">
-        <h2 class="section__title">Тарифы<br> на SEO - продвижение сайтов</h2>
-        <div class="section__text editor">
-          <p>Перечень работ входящих с тарифные планы зависит от тематики сайта, его готовности к Seo - продвижению и задачи Заказчика. Что также влияет на конечную стоимость</p>
-        </div>
-      </div>
-      <div class="cards cards--autoheight cards--3col">
-        <div class="cards__items">
-          <div class="cards__item cards__item--big cards__item--big-2">
-            <div class="cards__item-inner">
-              <div class="cards__item-header">
-                <div class="cards__item-row">
-                  <strong class="cards__item-title">Стандарт</strong>
-                  <div class="star-rating star-rating--big star-rating--red">
-                    <ul class="star-rating__stars">
-                      <li class="star-rating__star"></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="cards__item-text editor">
-                  <p>Оптимальный вариант для малого и среднего бизнеса, работающего одном регионе. (Города областного назначения)</p>
-                </div>
-              </div>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <ul>
-                    <li class="editor__list-item editor__list-item--background">Базовая SEO-оптимизация</li>
-                    <li class="editor__list-item editor__list-item--background">Оптимизация посадочных страниц</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cards__item-price">
-                от <span class="cards__item-price-value">470</span> BYN/месяц <sup>150$</sup>
-              </div>
-              <a class="cards__item-btn btn btn--stretch" href="#">Заказать консультацию</a>
-            </div>
-            <div class="cards__item-icon">
-              <img src="./assets/standart-tariff-preview.png" alt="">
-            </div>
-          </div>
-          <div class="cards__item cards__item--big cards__item--big-2">
-            <div class="cards__item-inner">
-              <div class="cards__item-header">
-                <div class="cards__item-row">
-                  <strong class="cards__item-title">Специальный</strong>
-                  <div class="star-rating star-rating--big star-rating--red">
-                    <ul class="star-rating__stars">
-                      <li class="star-rating__star"></li>
-                      <li class="star-rating__star"></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="cards__item-text editor">
-                  <p>Подходит для сайтов, продвигаемых в высококонкурентных регионах  (Города столицы)</p>
-                </div>
-              </div>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <ul>
-                    <li class="editor__list-item editor__list-item--background">SEO-оптимизация</li>
-                    <li class="editor__list-item editor__list-item--background">Оптимизация посадочных страниц</li>
-                    <li class="editor__list-item editor__list-item--background editor__list-item--border">Работа с внешней ссылочной массой</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cards__item-price">
-                от <span class="cards__item-price-value">750</span> BYN/месяц <sup>250$</sup>
-              </div>
-              <a class="cards__item-btn btn btn--stretch" href="#">Заказать консультацию</a>
-            </div>
-            <div class="cards__item-icon">
-              <img src="./assets/special-tariff-preview.png" alt="">
-            </div>
-          </div>
-          <div class="cards__item cards__item--big cards__item--big-2">
-            <div class="cards__item-inner">
-              <div class="cards__item-header">
-                <div class="cards__item-row">
-                  <strong class="cards__item-title">Делюкс</strong>
-                  <div class="star-rating star-rating--big star-rating--red">
-                    <ul class="star-rating__stars">
-                      <li class="star-rating__star"></li>
-                      <li class="star-rating__star"></li>
-                      <li class="star-rating__star"></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="cards__item-text editor">
-                  <p>Тариф для ресурсов, раскручиваемых сразу в нескольких регионах, с выходном на СНГ и зарубежья, для среднего и крупного бизнеса.</p>
-                </div>
-              </div>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <ul>
-                    <li class="editor__list-item editor__list-item--background">Базовая SEO-оптимизация</li>
-                    <li class="editor__list-item editor__list-item--background">Оптимизация посадочных страниц</li>
-                    <li class="editor__list-item editor__list-item--background">Работа с внешней ссылочной массой</li>
-                    <li class="editor__list-item editor__list-item--background">Настройка и ведение рекламы</li>
-                    <li class="editor__list-item editor__list-item--background editor__list-item--border">Email-маркетинг</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cards__item-price">
-                от <span class="cards__item-price-value">2250</span> BYN/месяц <sup>750$</sup>
-              </div>
-              <a class="cards__item-btn btn btn--stretch" href="#">Заказать консультацию</a>
-            </div>
-            <div class="cards__item-icon">
-              <img src="./assets/deluxe-tariff-preview.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--dark">
-    <div class="section__container container">
-      <div class="content-image content-image--center">
-        <div class="content-image__content">
-          <h2 class="section__title">Seo продвижение<br> на результат</h2>
-          <div class="content-image__text editor">
-            <p>Всегда стремимся достигнуть максимальный результат от работы, помогаем выйти на новый уровень. Внедряем комплексные стратегии, чтобы наши клиенты могли расти, получили конкурентное преимущество и увеличили прибыль.</p>
-          </div>
-          <a class="btn btn--fill" href="#">Оставить заявку</a>
-        </div>
-        <div class="content-image__image content-image__image--contain"><img src="./assets/top10.png" alt=""></div>
-      </div>
-      <div class="glows">
-        <div class="glows__glow glows__glow--right"></div>
-        <div class="glows__glow glows__glow--right glows__glow--right-2"></div>
-        <div class="glows__glow glows__glow--right glows__glow--right-3"></div>
-      </div>
-      <div class="watermark watermark--right watermark--center">
-        <span>&nbsp;Продвижение</span><br>
-        <span>SEO</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section__container container">
-      <div class="section__content-container">
-        <h2 class="section__title">Что вы получаете от SEO продвижения</h2>
-        <div class="section__text editor">
-          <p>Качественные работы по SEO оптимизации залог существенной экономии рекламного бюджета в будущем.</p>
-        </div>
-      </div>
-      <div class="content-image content-image--center">
-        <div class="content-image__content">
-          <strong class="content-image__title">Рост позиций сайта в поисковой выдаче Яндекса и Google</strong>
-          <div class="content-image__text editor">
-            <p>Рост позиций, а соответственно и видимости Вашего сайта, даёт существенный прирост целевого трафика на сайт, увеличение числа конверсий и продаж, что ощутимо в периоды когда платная реклама отключена, либо закончился рекламный бюджет.</p>
-          </div>
-        </div>
-        <div class="content-image__image content-image__image--contain"><img src="./assets/keyword-positions.png" alt=""></div>
-      </div>
-      <div class="content-image content-image--center content-image--reverse content-image--background">
-        <div class="content-image__content">
-          <strong class="content-image__title">Рост узнаваемости компании в сети интернет</strong>
-          <div class="content-image__text editor">
-            <p>Привлечённый органический трафик в сравнении с рекламным платным трафиком вызывает больше доверия. Даже если пользователи не станут вашими клиентами в тот же день, они как минимум запомнят то, что ваша компания существует и вернуться к Вам вновь.</p>
-          </div>
-        </div>
-        <div class="content-image__image content-image__image--contain"><img src="./assets/site-visibility.png" alt=""></div>
-      </div>
-      <div class="content-image content-image--center">
-        <div class="content-image__content">
-          <strong class="content-image__title">Экономия на рекламном бюджете</strong>
-          <div class="content-image__text editor">
-            <p>Трафик из результатов поисковой выдачи наиболее конверсионный. Поэтому, при SEO продвижении, в длительной перспективе Вы сможете либо вообще отказаться от затрат на рекламу, либо запускать рекламную кампании как дополнительный источник для получения продаж.</p>
-          </div>
-        </div>
-        <div class="content-image__image content-image__image--contain"><img src="./assets/visits.png" alt=""></div>
       </div>
     </div>
   </section>
@@ -509,58 +780,40 @@
   <section class="section">
     <div class="section__container container">
       <div class="section__content-container">
-        <h2 class="section__title">Кейсы<br> по продвижению</h2>
+        <h2 class="section__title">Что дает интеграция<br> Битрикс24</h2>
         <div class="section__text editor">
-          <p>Здесь представлены некоторые наши проекты разработкой и (или) продвижением которых мы занимались. Больше наших работ Вы можете увидеть на страницах этого сайта, а также в разделе Портфолио.</p>
+          <p>Наличие мобильного приложения позволяет всегда оставаться на связи и легко наладить коммуникацию между клиентом и компанией</p>
         </div>
       </div>
-      <div class="cards cards--3col cards--oneline">
-        <div class="cards__items">
-          <a class="cards__item cards__item--image" href="#">
-            <div class="cards__item-image">
-              <img src="./assets/sajt-turisticheskogo-agenstva-preview.jpg" alt="">
-            </div>
-            <div class="cards__item-inner">
-              <strong class="cards__item-title">Сайт туристического агенства</strong>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <p>Оптимизация сайта туристического агентства</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="cards__item cards__item--image" href="#">
-            <div class="cards__item-image">
-              <img src="./assets/sajt-agenstva-nedvizhimosti-preview.jpg" alt="">
-            </div>
-            <div class="cards__item-inner">
-              <strong class="cards__item-title">Сайт агенства недвижимости</strong>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <p>Продвижение сайта агенства недвижимости</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="cards__item cards__item--image" href="#">
-            <div class="cards__item-image">
-              <img src="./assets/internet-magazina-detskih-kolyasok-preview.jpg" alt="">
-            </div>
-            <div class="cards__item-inner">
-              <strong class="cards__item-title">Интернет-магазина детских колясок</strong>
-              <div class="cards__item-text-wrapper">
-                <div class="cards__item-text editor">
-                  <p>Продвижение интернет-магазина детских колясок</p>
-                </div>
-              </div>
-            </div>
-          </a>
+      <div class="content-image content-image--center">
+        <div class="content-image__content">
+          <strong class="content-image__title">Внутренние коммуникации</strong>
+          <div class="content-image__text editor">
+            <p>С Битрикс24 Вы сможете контролировать все рабочие процессы вашей компании в одном месте. Ставить задачи и контролировать их выполнение, отправлять файлы и голосовые сообщения, общайтесь в личном чате, обсуждайте планы в групповых чатах и принимать быстрые и взвешенные решения. Будьте всегда на связи и в курсе событий: используйте для работы десктопное и мобильное приложения.</p>
+          </div>
         </div>
-        <a class="cards__btn cards__btn--center btn" href="#">Перейти в портфолио</a>
+        <div class="content-image__image content-image__image--contain"><img src="./assets/bitrix-internal-communications.png" alt=""></div>
+      </div>
+      <div class="content-image content-image--center content-image--reverse content-image--background">
+        <div class="content-image__content">
+          <strong class="content-image__title">Автоматизация продаж и бизнес-процессов</strong>
+          <div class="content-image__text editor">
+            <p>Автоматизируйте продажи с помощью роботов и бизнес-процессов. Делегируйте важную, трудоёмкую и рутинную работу с клиентом 1C-Битрикс24. У ваших менеджеров автоматически появятся новые задачи и вовремя придут напоминания. А клиенты получат все сообщения о статусе их заказа, дадут обратную связь.</p>
+          </div>
+        </div>
+        <div class="content-image__image content-image__image--contain"><img src="./assets/bitrix-automation-of-sales-and-business-processes.jpg" alt=""></div>
+      </div>
+      <div class="content-image content-image--center">
+        <div class="content-image__content">
+          <strong class="content-image__title">CRM и управление клиентской базой</strong>
+          <div class="content-image__text editor">
+            <p>В CRM вы ведёте своих клиентов по всем этапам жизненного цикла, изучаете их поведение, создаёте сегменты по заданным критериям, вовремя даёте всю необходимую для них информацию. Звоните, пишите клиенту в один клик прямо из карточки CRM, угадывайте его желания и делайте выгодные предложения.</p>
+          </div>
+        </div>
+        <div class="content-image__image content-image__image--contain"><img src="./assets/bitrix-crm-and-customer-base-management.jpg" alt=""></div>
       </div>
     </div>
   </section>
-  <!-- /portfolio -->
 
   <section class="section section--dark">
   <div class="section__container container">
