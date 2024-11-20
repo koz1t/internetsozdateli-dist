@@ -160,22 +160,40 @@
       <!-- /header -->
 
 <style>
-  .header__container {
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .header__inner,
+  .header__nav,
   .header__burger-btn {
     display: none;
-  }
-  .header__logo {
-    max-width: 15rem;
-    max-height: 2rem;
   }
   .logo,
   .footer__nav-item {
     pointer-events: none;
+  }
+  @media (max-width: 480px) {
+    .header__container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .header:not(.header--burger-active) .header__inner {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+    .header__inner {
+      position: static;
+      background: none;
+    }
+    .header__contacts {
+      padding: 0;
+      align-items: center;
+      background: none;
+    }
+    .header__contacts .contacts-list__link {
+      color: #fff;
+    }
+    .header__address-list,
+    .header__mail-list {
+      display: none;
+    }
   }
 </style>
 
@@ -193,6 +211,28 @@
         <div class="hero-section__text section__text editor">
           <p>Упростите Ваши бизнес процессы с внедрением Битрикс24</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__container container">
+      <div class="section__content-container">
+        <h2 class="section__title">Бонусы и скидки</h2>
+        <div class="section__text editor">
+          <p>Дарим скидку на внедрение Битрикс24. Подробнее ознакомится с функционалом Битрикс24 Вы можете изучив презентацию.</p>
+        </div>
+      </div>
+      <div class="section__row section__row--wrap">
+        <a class="btn btn--big btn--fill" href="#">Забрать скидку 20%</a>
+        <a class="btn btn--big btn--" href="#">Презентация Битрикс24</a>
+      </div>
+      <div class="glows">
+        <div class="glows__glow glows__glow--right"></div>
+      </div>
+      <div class="watermark watermark--right">
+        <span>Desktop</span><br>
+        <span>WEB</span> <span>Mobile</span>
       </div>
     </div>
   </section>
@@ -674,13 +714,6 @@
           </div>
         </div>
       </div>
-      <div class="glows">
-        <div class="glows__glow glows__glow--right"></div>
-      </div>
-      <div class="watermark watermark--right">
-        <span>Desktop</span><br>
-        <span>WEB</span> <span>Mobile</span>
-      </div>
     </div>
   </section>
 
@@ -1011,6 +1044,6 @@
     var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
     var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
   })(window,document,'https://cdn-ru.bitrix24.by/b17347742/crm/site_button/loader_2_p5vyj2.js');
-</script>
+</script>
 </body>
 </html>
