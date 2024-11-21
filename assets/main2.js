@@ -3292,14 +3292,45 @@ function splideSlider() {
   sliders = document.querySelectorAll(".cards--portraits.splide");
   sliders.forEach((slider) => {
     const splide = new Splide(slider, {
-      perPage: 6
-      // breakpoints: {
-      //   768: {
-      //     destroy: true
-      //   }
-      // }
+      perPage: 6,
+      breakpoints: {
+        768: {
+          perPage: 4
+        },
+        480: {
+          perPage: 2
+        }
+      }
+    });
+    splide.on("mounted", () => destroyIfNotOverflowing(splide, slider));
+    splide.on("mounted move", () => {
+      updateProgressBar(splide, slider);
     });
     splide.mount();
+  });
+  sliders = document.querySelectorAll(".media-slider.splide");
+  sliders.forEach((slider) => {
+    const splide = new Splide(slider, {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      autoWidth: true,
+      gap: "0.83rem",
+      direction: "ltr",
+      autoScroll: {
+        speed: 1
+      }
+    });
+    splide.on("mounted", () => destroyIfNotOverflowing(splide, slider));
+    splide.on("mounted move", () => {
+      updateSlideNumber(splide);
+      updateProgressBar(splide, slider);
+    });
+    splide.on("active", () => {
+      updateSlideNumber(splide);
+      updateProgressBar(splide, slider);
+    });
+    splide.mount({ AutoScroll });
   });
 }
 function cards() {
@@ -6551,7 +6582,25 @@ class Oe extends g {
 }
 Object.defineProperty(Oe, "version", { enumerable: true, configurable: true, writable: true, value: "5.0.36" }), Object.defineProperty(Oe, "defaults", { enumerable: true, configurable: true, writable: true, value: at }), Object.defineProperty(Oe, "Plugins", { enumerable: true, configurable: true, writable: true, value: te }), Object.defineProperty(Oe, "openers", { enumerable: true, configurable: true, writable: true, value: /* @__PURE__ */ new Map() });
 function fancybox() {
-  Oe.bind("[data-fancybox]", {});
+  Oe.bind("[data-fancybox]:not(.splide__slide--clone)", {});
+}
+function anchorsScroll() {
+  const smoothScroll = (target) => {
+    const element = document.querySelector(target);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth"
+      });
+    }
+  };
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", (e2) => {
+      e2.preventDefault();
+      const targetId = anchor.getAttribute("href");
+      smoothScroll(targetId);
+    });
+  });
 }
 document.addEventListener("DOMContentLoaded", function() {
   headerNav();
@@ -6565,4 +6614,5 @@ document.addEventListener("DOMContentLoaded", function() {
   tabs();
   b24();
   fancybox();
+  anchorsScroll();
 });
