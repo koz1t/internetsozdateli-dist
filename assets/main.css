@@ -4996,7 +4996,7 @@ html, body, .wrapper {
     margin-bottom: 0.5rem;
   }
 }
-.header ~ .main .section:first-child .section__container:first-child {
+.header ~ .main .section:first-child .section__container {
   padding-top: 8.16667rem;
 }
 .breadcrumbs + .section .section__container {
